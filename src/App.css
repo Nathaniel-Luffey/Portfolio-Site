@@ -1,0 +1,183 @@
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #208c71;
+  font-family: 'fontWin95', sans-serif;
+}
+
+.desktopIconContainer {
+  height: 100%;
+  width: 100px;
+  display: flex;
+  position: absolute;
+  left: 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desktopIconTextGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.desktopIcon {
+  height: 65px;
+  width: 65px;
+  margin-top: 10px;
+}
+
+.desktopIconText {
+  color: white;
+  text-align: center;
+}
+
+.taskBar {
+  background-color: #c0b8bf;
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-color: #f7f5fc;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.startBox {
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: white;
+  border-left-color: white;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 30px;
+}
+
+.startText {
+  font-size: 19px;
+  padding-left: 2px;
+  padding-right: 2px;
+  font-weight: bold;
+}
+
+.windowIcon {
+  width: 30px;
+}
+
+.activeMinimizedButton {
+  border-style: solid;
+  border-width: 2px;
+  border-bottom-color: white;
+  border-right-color: white;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  background-color: #c0b8bf;
+  width: 200px;
+  cursor: pointer;
+}
+
+.minimizedButton {
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: white;
+  border-left-color: white;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  background-color: #c0b8bf;
+  width: 200px;
+  cursor: pointer;
+}
+
+.minimizedIcon {
+  width: 20px;
+  padding-right: 1px;
+}
+
+.window {
+  position: absolute;
+  background-color: #c0b8bf;
+  display: flex;
+  justify-content: flex-start;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #efe6ea;
+  flex-direction: column;
+}
+
+.topBar {
+  background-color: #80787e;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  width: calc(100% - 2px);
+}
+
+.textHeaderContainer {
+  display: flex;
+  align-items: center;
+}
+
+.titleBarButtonContainer {
+  display: flex;
+  align-items: center;
+  padding-right: 1px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
+.textHeader {
+  font-size: 18px;
+  color: #beb5be;
+}
+
+.titleBarButtons {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.aboutMePicture {
+  height: 300px;
+  width: 250px;
+  padding-right: 20px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.paragraphHeader {
+  font-size: 25px;
+}
+
+.paragraphText {
+  font-size: 15px;
+  padding-top: 5px;
+}
