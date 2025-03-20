@@ -14,7 +14,7 @@ function App() {
       height: 600,
       content: (
         <div className='contentContainer'>
-          <img className='aboutMePicture' src='/IMG_3989.png' alt='Nathaniel Luffey in front of Alaskan waterfall' draggable='false'/>
+          <img className='aboutMePicture' src={`${process.env.PUBLIC_URL}/IMG_3989.png`} alt='Nathaniel Luffey in front of Alaskan waterfall' draggable='false'/>
           <div className='textContainer'>
             <span className='paragraphHeader'>Hello!</span>
             <span className='paragraphText'>
@@ -38,7 +38,7 @@ function App() {
       height: 500,
       content: (
         <div className='contentContainer'>
-          <img className='aboutMePicture' src='/20241204_184638937_iOs.png' alt="Nathaniel Luffey's Server Corner" draggable='false'/>
+          <img className='aboutMePicture' src={`${process.env.PUBLIC_URL}/20241204_184638937_iOs.png`} alt="Nathaniel Luffey's Server Corner" draggable='false'/>
           <div className='textContainer'>
             <span className='paragraphHeader'>About This Website!</span>
             <span className='paragraphText'>
@@ -92,7 +92,7 @@ function App() {
       height: 700,
       content: (
         <div className='contentContainer'>
-          <img className='cloudPhotoPicture' src='/20241204_042907000_iOs.png' alt="Nathaniel Luffey's Cloud Storage App" draggable='false'/>
+          <img className='cloudPhotoPicture' src={`${process.env.PUBLIC_URL}/20241204_042907000_iOs.png`} alt="Nathaniel Luffey's Cloud Storage App" draggable='false'/>
           <div className='textContainer'>
             <span className='paragraphHeader'>Cloud Storage App Overview</span>
             <span className='paragraphText'>
