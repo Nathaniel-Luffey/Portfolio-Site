@@ -14,7 +14,7 @@ function App() {
       height: 600,
       content: (
         <div className='contentContainer'>
-          <img className='aboutMePicture' src='/IMG_3989.png' alt='Nathaniel in front of a waterfall' draggable='false'/>
+          <img className='aboutMePicture' src='/IMG_3989.png' alt='Nathaniel Luffey in front of Alaskan waterfall' draggable='false'/>
           <div className='textContainer'>
             <span className='paragraphHeader'>Hello!</span>
             <span className='paragraphText'>
@@ -35,8 +35,23 @@ function App() {
       isOpen: false,
       isMinimized: false,
       width: 600,
-      height: 600,
-      content: <div className='contentContainer'>Details about the creation of this website...</div>,
+      height: 500,
+      content: (
+        <div className='contentContainer'>
+          <img className='aboutMePicture' src='20241204_184638937_iOs.png' alt="Nathaniel Luffey's Server Corner" draggable='false'/>
+          <div className='textContainer'>
+            <span className='paragraphHeader'>About This Website!</span>
+            <span className='paragraphText'>
+              This website is a React based portfolio designed to look like the Windows 95 desktop. It was inspired by{' '}
+              <a href='https://github.com/Nathaniel-Luffey' target='_blank' rel='noopener noreferrer'>Joe Bergeron's portfolio</a>, which similarly shares a windowed design.<br/><br/>
+              The picture on the left is my server corner. Instead of using a cloud provider, I host this website on a 
+              desktop PC I built from old, unused parts I had lying around.
+              <br/><br/>
+              It runs Ubuntu Linux and serves this Dockerized website via Nginx.
+            </span>
+          </div>
+        </div>
+      ),
     },
     {
       id: 3,
@@ -46,7 +61,26 @@ function App() {
       isMinimized: false,
       width: 600,
       height: 600,
-      content: <div className='contentContainer'>Details about my bookstore project...</div>,
+      content: (
+        <div className='contentContainer'>
+          <div className='textContainer'>
+            <span className='paragraphHeader'>My Bookstore App</span>
+            <span className='paragraphText'>
+              I built a full-stack web app that allows users to browse, search, and order books. The backend is built with Node.js and Express, connecting to a MySQL database 
+              where the book records, users, and orders are stored. On the front end, I used React Native (with web support).<br/><br/>
+              <strong>Key Features:</strong>
+              <ul>
+                <li><em>Robust Search:</em> Look up books by title, author, publisher, or language.</li>
+                <li><em>Sorting & Filtering:</em> Sort results by publication year or rating.</li>
+                <li><em>User Accounts:</em> Log in, register, and view individual user profiles.</li>
+                <li><em>Comments & Ratings:</em> Add comments to books and vote on usefulness.</li>
+                <li><em>Manager Dashboard:</em> Special permissions to add new books, grant manager status, and view top sellers.</li>
+              </ul>
+              Feel free to explore the code and adapt it for your own projects! GitHub link <a href='https://github.com/Nathaniel-Luffey/bookstore-webapp' target='_blank' rel='noopener noreferrer'>here</a>.
+            </span>
+          </div>
+        </div>
+      ),
     },
     {
       id: 4,
@@ -54,9 +88,22 @@ function App() {
       textHeader: 'Cloud Storage Project',
       isOpen: false,
       isMinimized: false,
-      width: 600,
-      height: 600,
-      content: <div className='contentContainer'>Details about my mobile cloud photo storage project...</div>,
+      width: 700,
+      height: 700,
+      content: (
+        <div className='contentContainer'>
+          <img className='cloudPhotoPicture' src='20241204_042907000_iOs.png' alt="Nathaniel Luffey's Cloud Storage App" draggable='false'/>
+          <div className='textContainer'>
+            <span className='paragraphHeader'>Cloud Storage App Overview</span>
+            <span className='paragraphText'>
+            This project is a personal cloud photo storage system that integrates a custom server (built with Django and Python) and a React Native client application.<br/><br/>
+            I host the Django backend on my personal server (the same machine that runs this website). The React Native client uses the server’s local IP address to communicate with the API endpoints, but you can also expose this publicly with proper port-forwarding.<br/><br/>
+            I built this system primarily to avoid the monthly fees for commercial cloud providers. Eventually I plan to intergrate video functionality and maybe some other file types too.<br/><br/>
+            If this seems useful for anything you need feel free to pull it from GitHub <a href='https://github.com/Nathaniel-Luffey/Mobile-Cloud-Photo-Backup-App' target='_blank' rel='noopener noreferrer'>here</a>.
+            </span>
+          </div>
+        </div>
+      ),
     },
   ]);
   const [zAxis, setZAxis] = useState(windows.map(win => win.id));

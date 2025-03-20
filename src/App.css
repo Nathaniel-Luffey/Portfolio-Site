@@ -168,6 +168,18 @@ main {
   padding-right: 20px;
 }
 
+.serverPicture {
+  height: 300px;
+  width: 250px;
+  padding-right: 20px;
+}
+
+.cloudPhotoPicture {
+  height: 500px;
+  width: 250px;
+  padding-right: 20px;
+}
+
 .textContainer {
   display: flex;
   flex-direction: column;
